@@ -6,61 +6,62 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="contenton">
-        <div class="header">
-            <div>
-          <img src="z5442616108191_a4d80b81fe1f87d1d40d1ff15ba8dbd3.jpg" alt="">  
+    <div class="abc">
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Tien ịch Internet</li>
+            <li>Quan ly website</li> 
+        </ul>
+        </div>
+        <div class="cbd">
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Tien ịch Internet</li>
+                <li>Quan ly website</li> 
+            </ul>
             </div>
-         <div class="search">
-            <input type="text">
-            <p>Tìm kiếm</p>
-         </div>
-        </div>
-    <div class="article">
-    <div class="iTem"> Box1</div>
-     <div class="iTem"> Box2</div>
-     <div class="iTem"> Box3</div>
-    </div>
-        </div>
-    <style>
-        body{
-            box-sizing: border-box;
-            margin: 0%;
-            padding: 0%;
-            display: flex;
-            justify-content: center;
-        }
-        .contenton{
-       width: 800px;
-       height: 800px;
-       background-color: burlywood;
- 
-        }
-       
-        .article{
-          /*cho các thằng iTem con hiển thị theo chiều ngang
-       (bắt buộc có thể sử dụng các thuộc tính liên quan đến flex)*/
-       display: flex;
-       /*Cho các iTem căn chỉnh theo chiều ngang*/
-       justify-content: center;
-       /*Cho các iTem căn chỉnh theo chiều dọc*/
-       align-items: center;
-        }
-        .header{
-            display: flex;
-            justify-content: space-between;
-        }
-        .search{
-            display: flex;
-            align-items: center;
-        }
-        .iTem{
-            width: 200px;
-            height: 200px;
-            border: 5px solid grey;
-            background-color: aqua;
-            margin: 10px;
-        }
-      </style>
+     <div class="bdc">
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Tien ịch Internet</li>
+                    <li>Quan ly website</li> 
+                </ul>
+                </div>
+    <div class="cba"> 
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Tien ịch Internet</li>
+                        <li>Quan ly website</li> 
+                    </ul>
+                    </div>
+      <div class="img" style="margin-left: 100px;">
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Tien ịch Internet</li>
+            <li>Quan ly website</li>   
+        </ul>
+      </div>              
 </body>
+<style>
+    .abc li{
+     list-style-type: disc;
+     }
+     .cbd li{
+      list-style-type: circle;
+     }
+     .bdc li{
+      list-style-type: square;
+     }
+     .cba li{
+      list-style-type: none;
+     }
+     .img{
+        list-style-image: url("sun-11431_128.gif");
+     }
+      </style>
 </html>

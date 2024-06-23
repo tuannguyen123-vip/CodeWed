@@ -6,22 +6,102 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="../lab1/anh-dep-40.jpg.webp" alt="" width="200px" height="200px">
-    <div class="box"></div>
+    <div class="container">
+     <header>
+     </header>
+     <nav>
+        <div class="hmenu">
+        <ul>
+        <li><a href="">Trang chu</a></li>
+        <li><a href="">Gioi Thieu</a></li>
+        <li><a href="">Lien he</a></li>
+        <li><a href="">Gop y</a></li>
+        <li><a href="">Giap dap</a></li>
+        </ul>
+       </div>
+     </nav>
+     <div class="conter">
+    <article></article>
+    <div class="menu">
+        <ul>
+            <li><a href="">May tinh xach tay</a></li>
+            <li><a href="">May giat</a></li>
+            <li><a href="">Lien he</a></li>
+            <li><a href="">Gop y</a></li>
+            <li><a href="">Giap dap</a></li>
+            </ul>
+    </div> 
+    </div>
+     <footer><span>FPT polytechnic</span></footer>
+    </div>
 </body>
- <style>
-    img{
-        box-shadow: 5px -5px 10px red;
-    }
-    .box{
-        width: 1000px;
-        height: 1000px;
-        margin-top: 40px;
-        background-color: green ;
-        box-shadow: -5px -5px 10px aqua;
-        background-image: url("../lad3/tree.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100% ;
-    }
- </style>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }    
+        .container{
+            width: 900px;
+            height: 1000px;
+            background-color: aqua;
+
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-image: url("z5449156796818_41800b94cf959c676f1124f51df47744.jpg");
+            background-size: 100% 100%;
+        }
+        .conter>article{
+            width: 680px;
+        }
+        .conter>.menu{
+            width: 300px;
+            height: 100%;
+            background-color: gray;
+        }
+        nav{
+            background-color: red;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hmenu{
+            display: flex;
+            justify-content: center;
+        }
+        .hmenu>ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .hmenu>ul>li>a{
+            margin: 20px;
+            color: white;
+            text-decoration: dashed;
+        }
+        .hmenu>ul>li>a:hover{
+            text-decoration: underline;
+        }
+        .menu top{
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        .conter{
+            height: 400px;
+            display: flex;
+        }
+        footer{
+            height: 50px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </html>
