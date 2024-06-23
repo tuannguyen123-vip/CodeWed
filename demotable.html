@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    */border 1 đc dùng để thêm các thanh ngang và dọc cho các dữ liệu/*
+    <table border="1">
+        <caption>Luong nhan vien</caption>
+        <tr>
+            <th>Ten nhan Vien</th>
+            <th>Luong</th>
+        </tr>
+        <tr>
+            <td colspan="2">Thanh pham</td>
+        </tr>
+        <tr>
+            <td>Minh Chau</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Phan dang</td>
+            <td>100</td>
+        </tr>
+    </table>
+    /*rowspan là gộp 2 phần vào làm 1 với*/
+        <table border="1">
+            <caption>Bang diem</caption>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">ho va ten</th>
+                <th colspan="3">Diem</th>
+            </tr>
+            <th>Toan</th>
+            <th>Ly</th>
+            <th>Hoa</th>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Phan Ngoc Hieu</td>
+                <td>10</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <table border="1">
+            <caption>Bang diem</caption>
+            <tr>
+                <th>STT</th>
+                <th>ho va ten</th>
+                <th>Toan</th>
+                <th>Ly</th>
+                <th>Hoa</th>
+            </tr
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Phan Ngoc Hieu</td>
+                <td>10</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <table border="1">
+            <caption>Tien Hoàn</caption>
+            <tr>
+                <th rowspan="2">Ngoại tệ</th>
+                <th colspan="2">Tỷ giá mua</th>
+                <th rowspan="2">Tỷ giá gần</th>
+            </tr>
+            <tr class="chu">
+            <th>tiền mặt</th>
+            <th>Chuyển khoản</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>  <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Ha Nam</td>
+                <td>6</td>
+                <td>8</td>
+            </tr>
+        </table>
+        
+</body>
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    tr:nth-child(2n+1){
+        background-color: rgb(183, 181, 181);
+    }
+    tr:nth-child(2n){
+        background-color: rgb(255, 255, 255);
+    }
+    tr:first-child{
+        background-color: rgb(43, 202, 226);
+    }
+    tr:last-child{
+        background-color: gray;
+    }
+    tr.chu{
+    background-color: rgb(43, 192, 226);
+    }
+</style>
+</html>
