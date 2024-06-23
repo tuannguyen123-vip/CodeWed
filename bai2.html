@@ -7,52 +7,89 @@
 </head>
 <body>
     <form action="">
-    <div class="form-group">
+        <div class="form-group">
         <label>Họ và tên:</label><br>
         <input type="text" class="form-control">
-    </div>
-    <div class="form-group">
-        <label>Giới Tính:</label>
-         <label><input name="gender" type="radio">Nam</label>
-         <label><input name="gender" type="radio">Nữ</label>
-    </div>
-    <div class="form-group">
-    <label>Hình ảnh:</label><br>
-    <input name="photo" type="file">
-    </div>
-    <div class="form-group">
-    <label>Quốc tịch:</label><br>
-    <select class="form-control">
-        <option>Việt Nam</option>
-        <option>The UK</option>
-        <option>The US</option>
-    </select>
-    </div>
-   <div class="form-group">
-   Sở thích:<br>
-   <label><input name="sothich" type="checkbox" >Thể thao</label>
-   <label><input name="sothich" type="checkbox" >Du lịch</label>
-   <label><input name="sothich" type="checkbox" >Ẩm thực</label>
-   <label><input name="sothich" type="checkbox" >Âm nhạc</label>
-   </div>
-   <div class="form-group">
-   <label>Ghi chú</label><br>
-   <textarea rows="5" cols="40"></textarea>
-   </div>
-   <hr>
-   <div class="form-group">
-    <input type="button" value="Đăng ký">
-    <input type="reset" value="Nhập lại">
-   </div>
+        </div>
+        <div class="form-group">
+        <fieldset>
+            <legend>Giới Tính:</legend>
+        <label><input type="radio" name="gender">Nam</label>
+        <label><input type="radio" name="gender">Nữ</label>
+        </fieldset>
+        </div>
+        <div class="form-group">
+        <label>Ngày sinh:</label><br>
+        <input type="date" placeholder="mm/dd/yyyy" class="form-control">
+        </div>
+        <div class="form-group">
+        <label>Điểm:</label><br>
+        <input type="number" min="0" max="10" step="0.25" class="form-control">
+        </div>
+        <div class="form-group">
+        <label>Nghề Nghiệp:</label><br>
+        <select class="form-control">
+            <option>Việt Nam</option>
+            <option>The UK</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <fieldset>
+            <legend>Sở Thích:</legend>
+            <label><input name="sothich" type="checkbox" >Thể thao</label>
+           <label><input name="sothich" type="checkbox" >Du lịch</label>
+           <label><input name="sothich" type="checkbox" >Ẩm thực</label>
+           <label><input name="sothich" type="checkbox" >Âm nhạc</label>
+        </fieldset>
+        </div>
+        <div class="form-group">
+        <label>Ghi chú:</label><br>
+        <textarea rows="4" cols="40" class="form-control"></textarea>
+        </div> 
+        <hr>
+        <div class="form-group">
+        <input type="button" value="Đăng ký">
+        <input type="reset" value="Nhập lại">
+        </div>    
     </form>
 </body>
 <style>
     .form-group{
-        margin: 10px 2px;
+       margin: 10px 2px;
     }
     .form-control{
-    width: 200px;
-    height: 20px;
+       width: 98%;
+       padding: 5px;
+       outline: none;
+       border: 1px solid gray;
+       border-radius: 3px;
+    }
+    .form-group label{
+       font-weight: bold;
+       font-variant: small-caps;
+    }
+    .form-control:focus{
+       background-color: yellow;
+       box-shadow: 0 0 3px red;
+       border: 1px solid yellow;
+    }
+    .form-button{
+       padding: 8px 30px;
+       outline: none;
+       border: none;
+       border-radius: 20px;
+       font-weight: bold;
+       background-color: white;
+       color: orangered;
+       box-shadow: inset 0 0 20px blue;
+    }
+    .form-button:hover{
+       color: blue;
+       box-shadow: inset 0 0 20px orangered;
+    }
+    .form-button:disabled{
+       color: darkgray;
+       box-shadow: inset 0 0 20px gray;
     }
 </style>
 </html>
