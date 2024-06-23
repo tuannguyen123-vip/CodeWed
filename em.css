@@ -1,0 +1,16 @@
+p{
+    color: rgb(5, 148, 5);
+   
+}
+p.abc{
+    color: red;
+    
+}
+p.abd{
+    color: blue;
+   
+}
+em{
+    font-style: italic;
+    font-size: 20px;
+}
