@@ -1,3 +1,16 @@
+em{
+    font-style: italic;
+    font-size: 20px;
+    font-variant: small-caps;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-shadow: 0 0 5px red;
+}
 p{
     color: rgb(5, 148, 5);
    
@@ -9,8 +22,4 @@ p.abc{
 p.abd{
     color: blue;
    
-}
-em{
-    font-style: italic;
-    font-size: 20px;
 }
