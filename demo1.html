@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bao Moi</title>
+    <title>Document</title>
 </head>
-   
 <body>
-    <img src="logo-fpt-polytechnic-inkythuatso-09-13-08-21.jpg" alt="">
-    <hr>
-    <h1>Xay Dung trang wed</h1>
-    <p> Trung tâm Dự báo Khí tượng Thủy văn Quốc gia, qua theo dõi trên ảnh vệ tinh, số liệu định vị dông sét và ra đa thời tiết
-    phát hiện thấy <mark>Hello</mark> vùng mây đối lưu đang <strong><h1>VL</h1> </strong> phát triển và gây mưa cho khu vực huyện Ba Vì, 
-    Chương Mỹ, quận Hà Đông và đang di chuyển và mở rộng sang khu vực nội thành Thành phố Hà Nội.</p>
+    <form action="">
+        <fieldset>
+            <legend>Gioi Tinh</legend>
     
-</body>
+            <label><input type="radio" name="gender">Nam</label>
+            <label><input type="radio" name="gender">Nu</label>
+            /*Viết ntn để lấy dữ liệu từ id từ input để cho vào label*/
+            <input type="radio" name="gender" id="Thu 3">
+            <label for="thu 3">gioi tinh thu 3</label>
+          </fieldset>
+          <input type="text" placeholder="Email Adress" tabindex="1" required><br>
+          <input type="text" readonly value="50" tabindex="2"><br>
+          <input type="text" tabindex="4"><br>
+          <input type="text" tabindex="3"><br>
+          <button tabindex="5">OK</button><button disabled>Cancel</button>
+    </form>
+    </body>
+ <style>
+    input{
+        margin: 10px;
+    }
+ </style>
 </html>
-

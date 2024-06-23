@@ -6,62 +6,56 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="abc">
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Tien ịch Internet</li>
-            <li>Quan ly website</li> 
-        </ul>
+    <form action="">
+        <div class="form-group">
+         <label>Tên đăng nhập</label>
+         <input type="text" class="form-control">
         </div>
-        <div class="cbd">
-            <ul>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Tien ịch Internet</li>
-                <li>Quan ly website</li> 
-            </ul>
-            </div>
-     <div class="bdc">
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Tien ịch Internet</li>
-                    <li>Quan ly website</li> 
-                </ul>
-                </div>
-    <div class="cba"> 
-                    <ul>
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Tien ịch Internet</li>
-                        <li>Quan ly website</li> 
-                    </ul>
-                    </div>
-      <div class="img" style="margin-left: 100px;">
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Tien ịch Internet</li>
-            <li>Quan ly website</li>   
-        </ul>
-      </div>              
+        <div class="form-group">
+         <label>Mật khẩu</label>
+         <input type="password" class="form-control">
+           </div>
+        <div class="form-group">
+         <label><input type="checkbox">Nhớ mật khẩu</label>
+           </div>
+        <div class="form-group">
+            <button class="loign-btn">Đăng nhập</button>
+            <button disabled>Hủy</button>
+           </div>   
+    </form>
+    <img src="../lab1/anh-dep-40.jpg.webp" width="200px" height="200px">
+    <img src="../lab1/anh-dep-40.jpg.webp" width="200px" height="200px">
+   
 </body>
-<style>
-    .abc li{
-     list-style-type: disc;
-     }
-     .cbd li{
-      list-style-type: circle;
-     }
-     .bdc li{
-      list-style-type: square;
-     }
-     .cba li{
-      list-style-type: none;
-     }
-     .img{
-        list-style-image: url("sun-11431_128.gif");
-     }
-      </style>
+  <style>
+    .form-group{
+        margin: 10px 2px;
+    }
+    .form-control{
+        margin: 3px 0px;
+        padding: 5px;
+        border: none;
+        width: 200px;
+        outline: none;
+        box-shadow: 0 0 3px blue;
+        color: orange;
+        border-radius: 3px;
+        display: block;
+    }
+    img{
+        display: block;
+    }
+    .form-control:focus{
+        box-shadow: 0 0 3px red;
+    }
+    .loign-btn{
+     border: 1px solid white;
+     width: 100px;
+     background-color: cornflowerblue;
+     color: white;
+    }
+    .loign-btn:hover{
+        background-color: yellow;
+    }
+  </style>
 </html>
